@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.wallet-btn{
+    background-color: #D4AF37;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    margin: 30px;
+    outline: none;
+    border: none;
+
+}
+
+.home-image{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    padding: 20px;
+}
+
+
+/* Middle Container */
+
+.middle-container {
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 60px 20px;
+    justify-items: center;
+}
+
+.left-container-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-container-text h3{
+    font-size: 55px;
+    padding: 30px 20px;
+    width: 80%;
+    font-weight: 800;
+    line-height: 65px;
+}
+
+.left-container-text p{
+    font-size: 36px;
+    padding: 20px;
+    line-height: 40px;
+}
+
+/* JOIN SOCIETY CONTAINER */
+
+.join-society-container {
+    display: flex;
+    background-color: #D4AF37;
+    margin: 80px 40px;
+}
+
+.txt1{
+    background-color: #D4AF37;
+}

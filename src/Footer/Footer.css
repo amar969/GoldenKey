@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 40px;
+    align-items: center;
+}
+
+
+.discord-watermark{
+    width: 200px;
+    height: 55px;
+}
+
+.brand-logo{
+    width: 17%;
+    height: 17%;
+}
+
+.social{
+    margin-bottom: 150px;
+    width: 12%;
+    height: 4%;
+}
+
+
+/* ipad */
+
+@media (max-width: 760px) {
+    
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px;
+        align-items: center;
+    }
+    
+    
+    .discord-watermark{
+        width: 120px;
+        height: 54px;
+    }
+    
+    .brand-logo{
+        width: 105px;
+        height: 105px;
+    }
+    
+    .social{
+        width: 130px;
+        height: 22px;
+    }
+}
+
+
+/* iPhone view */
+@media (max-width: 490px) {
+    
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px;
+        align-items: center;
+    }
+    
+    
+    .discord-watermark{
+        width: 60px;
+        height: 31px;
+    }
+    
+    .brand-logo{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .social{
+        width: 50px;
+        height: 14px;
+    }
+}
