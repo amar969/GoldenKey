@@ -5,9 +5,10 @@ import "./Home.css";
 import Home1 from "../images/render.png";
 import profile from "../images/profile.png";
 import eth from "../images/ETH-GIF.gif";
-import ezgif from "../images/ezgif.png";
+import ezgif from "../images/ezgif.com-gif-maker.gif";
 import gif1 from "../images/IMB_qMeOIN.gif";
 import Team from "../images/Team.png";
+
 
 export const Home = () => {
   return (
@@ -108,7 +109,7 @@ export const Home = () => {
 
       <hr />
       {/* RoadMap container */}
-      <div className="middle-container">
+      <div className="middle-container" id="the-roadmap">
         <div className="list-container-text">
           <h3>Roadmap</h3>
           <h4 className="list-heading">Q3 July-September</h4>
@@ -171,15 +172,15 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-            <button className="wallet-btn join-btn">Join Here</button>
+          <button className="wallet-btn join-btn">Join Here</button>
         </div>
       </div>
 
-      <hr /> 
 
       {/* Team page */}
 
-      <div className="middle-container">
+      <hr />
+      <div className="middle-container" id="the-team">
         <div className="left-container-text">
           <h3>The Team</h3>
           <p className="p-styling">
@@ -191,11 +192,13 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-          <img src={Team} alt="team image" className="team-image"/>
+          <img src={Team} alt="team image" className="team-image" />
         </div>
       </div>
 
-      <div className="coming-soon-container">VERIFIED SMART CONTRACT ADDRESS: <span>COMING SOON!</span> </div>
+      <div className="coming-soon-container">
+        VERIFIED SMART CONTRACT ADDRESS: <span>COMING SOON!</span>{" "}
+      </div>
 
       <Footer />
     </>

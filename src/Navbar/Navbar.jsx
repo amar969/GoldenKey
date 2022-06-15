@@ -8,6 +8,7 @@ import "./Navbar.css";
 import social from "../images/social.png"
 import {Link} from "react-router-dom";
 
+
 export const Navbar = () => {
 
 
@@ -20,8 +21,8 @@ export const Navbar = () => {
 
         <div className='nav-right-side-items'>
             <Link to="/Whitepaper"><h3>White Paper</h3></Link>
-            <h3>Gallery</h3>
-            <h3>Team</h3>
+            <a href="/Home#the-roadmap"><h3>Gallery</h3></a>
+            <a href="/Home#the-team"> <h3>Team</h3> </a> 
             <img src={social} alt="social" />
             {/* <img src={insta} alt="insta" />
             <img src={discord2} alt="discord" />
