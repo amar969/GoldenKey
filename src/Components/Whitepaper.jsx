@@ -11,7 +11,7 @@ export const Whiteapper = () => {
         <>
         <Navbar />
         
-        <div className="text-container">
+        <div className="texts-container">
         <h3>Project Outline/Abstract</h3>
         <br />
         <p>

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+hr{
+    margin: 20px 40px;
+}
+
 .main-container{
     display: flex;
     flex-direction: row-reverse;
@@ -57,6 +61,7 @@
     font-size: 36px;
     padding: 20px;
     line-height: 40px;
+    font-weight: 300;
 }
 
 /* JOIN SOCIETY CONTAINER */
@@ -65,8 +70,92 @@
     display: flex;
     background-color: #D4AF37;
     margin: 80px 40px;
+    justify-content: space-evenly;
+    padding: 50px 10px;
+    align-items: center;
 }
 
 .txt1{
     background-color: #D4AF37;
+    color: black;
+    margin-right: 380px;
+}
+
+.txt1 h4{
+    font-size: 35px;
+}
+
+.btn-mint{
+    padding: 20px 120px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-container{
+    margin: 60px 20px;
+}
+
+.text-container h3{
+    font-size: 55px;
+    padding: 30px 20px;
+    width: 80%;
+    font-weight: 800;
+    line-height: 65px;
+}
+
+.text-container p{
+    font-size: 36px;
+    padding: 20px;
+    line-height: 40px;
+}
+
+/* Roadmap */
+
+.list-container-text{
+    margin: 20px;
+}
+
+.list-container-text h3{
+    font-size: 55px;
+    padding: 30px 0px;
+    width: 80%;
+    font-weight: 800;
+    line-height: 65px;
+}
+
+.list-heading{
+    color: #D4AF37;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.list{
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+/* Team container */
+
+.team-image{
+    width: 450px;
+}
+
+.coming-soon-container{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px 0px;
+}
+
+.coming-soon-container span{
+    color: #D4AF37;
+}
+
+.join-btn{
+  margin-right: 140px;
+  margin-top: 170px;
+  padding: 20px 50px;  
 }

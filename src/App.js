@@ -3,14 +3,16 @@ import { Whiteapper } from "./Components/Whitepaper";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Home } from "./Components/Home";
+import {LandingPage} from "./Components/LandingPage";
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
+          <Route path="/LandingPage" element={<LandingPage/>} /> 
           <Route path="/Whitepaper" element={<Whiteapper />} />
-          <Route path="/" element={<Home /> } />
+          <Route path="/Home" element={<Home /> } />
         </Routes>
       </Router>
     </>
