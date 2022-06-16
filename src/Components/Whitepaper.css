@@ -27,7 +27,7 @@
   }
   
   h4 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 0em;
@@ -35,9 +35,9 @@
   }
   
   p {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 200;
-    line-height: 17px;
+    line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
   }
@@ -70,15 +70,15 @@
   
   @media (max-width: 490px) {
     h3 {
-      font-size: 17px;
+      font-size: 20px;
       font-weight: 700;
-      line-height: 37px;
+      line-height: 17px;
       letter-spacing: 0em;
       text-align: left;
     }
   
     h4 {
-      font-size: 15px;
+      font-size: 17px;
       font-weight: 700;
       line-height: 20px;
       letter-spacing: 0em;
@@ -86,8 +86,8 @@
     }
   
     p {
-      font-size: 10px;
-      font-weight: 200;
+      font-size: 12px;
+      font-weight: 400;
       line-height: 17px;
       letter-spacing: 0em;
       text-align: left;

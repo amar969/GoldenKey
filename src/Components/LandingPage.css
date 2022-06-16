@@ -78,7 +78,7 @@
 /* 1200px  */
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 1000px) {
 
     .wel-text-container{
         display: flex;
@@ -129,7 +129,7 @@
     
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (min-width: 850px) {
     .wel-text-container{
         display: flex;
         flex-direction: column;
@@ -178,7 +178,16 @@
 
 /*  850 pX and less */
 
-@media (max-width: 850px) {
+@media (max-width: 850px) and (min-width: 490px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 120px 40px 40px 40px;
+        align-items: center;
+        position: relative;
+    }
+
     .wel-text-container{
         display: flex;
         flex-direction: column;
@@ -222,40 +231,61 @@
         bottom: 20px;
         left: 30px;
     }
+
+    .logo{
+        position: absolute;
+        top: -45px;
+    }
+
+    .logo-img{
+        width: 100px;
+    }
+
+    .container .social{
+        width: 130px;
+        height: 130px;
+    }
+
     
 }
 
 
 @media (max-width: 490px) {
 
+    .home-img{
+        width: 100%;
+    }
+
     .container{
         display: flex;
         flex-direction: column;
-        margin: 160px 40px 40px 40px;
+        margin: 70px 20px 60px 20px;
         align-items: center;
+        position: relative;
     }
 
     .wel-text-container{
         display: flex;
         flex-direction: column;
-        width: 60%;
-        background-color: black;
-        padding: 10px 10px 10px 10px;
-        align-items: flex-end;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        line-height: 0px;
+        align-items: center;
     }
 
     .wel-text-container h3{
-        font-size: 18px;
-        text-align: right;
-        line-height: 15px;
-        width: 70%;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
     }
 
     .wel-text-container p {
+        width: 100%;
         font-size: 10px;
         line-height: 10px;
-        text-align: right;
-        width: 90%;
+        text-align: center;
+        margin-top: 10px;
     }
     
     .enter-btn{
@@ -266,14 +296,14 @@
         border: none;
         outline: none;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .btn-text-container{
         display: flex;
-        flex-direction: row;
-        bottom: 10px;
-        left: 20px;
+        position: absolute;
+        bottom: -40px;
+        left: 130px;
     }
 
     .logo{
@@ -284,5 +314,10 @@
 
     .logo-img{
         width: 100px;
+    }
+
+    .container .social{
+        width: 50px;
+        height: 50px;
     }
 }

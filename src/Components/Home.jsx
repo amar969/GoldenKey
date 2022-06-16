@@ -34,7 +34,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-          <img src={profile} alt="profile image" />
+          <img src={profile} className="profile-image" alt="profile image" />
         </div>
       </div>
 
@@ -63,7 +63,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-          <img src={eth} alt="profile image" />
+          <img src={eth} className="gif" alt="profile image" />
         </div>
       </div>
 
@@ -103,7 +103,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-          <img src={ezgif} alt="profile image" />
+          <img src={ezgif} className="gif" alt="profile image" />
         </div>
       </div>
 
@@ -153,7 +153,7 @@ export const Home = () => {
           </ul>
         </div>
         <div className="right-container-image">
-          <img src={gif1} alt="profile image" />
+          <img src={gif1} className="gif3" alt="profile image" />
         </div>
       </div>
 

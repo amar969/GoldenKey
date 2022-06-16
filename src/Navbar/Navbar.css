@@ -33,13 +33,24 @@ a{
 
 .icon{
     width: 108px;
+    margin-bottom: 20px;
+}
+
+.socials{
+    display: flex;
+    gap: 20px;
+}
+
+.socials a img{
+    width: 30px;
+    height: 30px;
 }
 
 
 
 /* ipad */
 
-@media (max-width: 760px) {
+@media (max-width: 850px) and (min-width: 490px){
     
     .navbar-conatiner{
         display: flex;
@@ -52,20 +63,32 @@ a{
     
     .nav-right-side-items{
         display: flex;
-        gap: 10px;
+        gap: 20px;
+        justify-content: space-evenly;
+        width: 70%;
     }
     .nav-right-side-items img{
-        width: 80px;
+        width: 100px;
         height: 25px;
     }
     
     .nav-right-side-items h3{
-        font-size: 18px;
+        font-size: 25px;
     }
     
     .icon{
-        width: 85px;
+        width: 105px;
     } 
+
+    .socials{
+        display: flex;
+        gap: 15px;
+    }
+    
+    .socials a img{
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media (max-width:490px) {
@@ -73,26 +96,45 @@ a{
     .navbar-conatiner{
         display: grid;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        padding: 37px 40px;
         justify-items: center;
+        padding: 10px 20px;
+        width: 100%;
+        margin-bottom: 50px;
     }
     
     .nav-right-side-items{
         display: flex;
-        gap: 10px;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
     }
     .nav-right-side-items img{
-        width: 14%;
+        width: 25px;
         height: 12%;
     }
     
     .nav-right-side-items h3{
-        font-size: 15px;
+        font-size: 20px;
+        height: 20px;
     }
     
     .icon{
-        width: 75px;
-    }   
+        width: 85px;
+    }
+    
+    .socials{
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .socials a img{
+        width: 15px;
+        height: 15px;
+    }
 }

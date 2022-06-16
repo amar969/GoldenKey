@@ -23,15 +23,21 @@ Link .brand-logo{
 }
 
 .social{
+    display: flex;
+    flex-direction: row;
     margin-bottom: 150px;
-    width: 12%;
-    height: 4%;
+    gap: 10px;
+}
+
+.social a img{
+    width: 30px;
+    height: 30px;
 }
 
 
 /* ipad */
 
-@media (max-width: 760px) {
+@media (max-width: 850px) and (min-width:490px){
     
     .footer{
         display: flex;
@@ -52,8 +58,13 @@ Link .brand-logo{
     }
     
     .social{
-        width: 130px;
-        height: 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .social a img{
+        width: 35px;
+        padding-right: 5px;
     }
 }
 
@@ -80,7 +91,17 @@ Link .brand-logo{
     }
     
     .social{
-        width: 50px;
-        height: 14px;
+        display: flex;
+        width: 10px;
+        height: 10px;
+        margin-right: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social a img{
+        width: 15px;
+        height: 15px;
+        padding-right: 5px;
     }
 }
