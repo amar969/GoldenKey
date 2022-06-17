@@ -64,8 +64,9 @@ export const Ehter = () => {
             {data.Balance}
           </h4>
           <button onClick={btnhandler}>
-            Connect to wallet
+            {data.Balance ? "Connected" : "Connect to Wallet"}
           </button>
+
         </div>
       </div>
     </>

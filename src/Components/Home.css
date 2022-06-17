@@ -405,6 +405,10 @@ hr{
         margin: 5px 20px;
     }
 
+    a {
+        color: black;
+    }
+
     .main-container{
         display: flex;
         position: relative;
