@@ -7,7 +7,7 @@
 .footer{
     display: flex;
     justify-content: space-between;
-    padding: 50px 40px;
+    padding: 20px 40px;
     align-items: center;
 }
 
@@ -26,7 +26,7 @@ Link .brand-logo{
     display: flex;
     flex-direction: row;
     margin-bottom: 150px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .social a img{

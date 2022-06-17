@@ -8,9 +8,53 @@ import eth from "../images/ETH-GIF.gif";
 import ezgif from "../images/ezgif.com-gif-maker.gif";
 import gif1 from "../images/IMB_qMeOIN.gif";
 import Team from "../images/Team.png";
+import { Link } from "react-router-dom";
+import { ethers } from "ethers";
+import { Ehter } from "./Ether";
 
 
 export const Home = () => {
+
+  const [data, setdata] = React.useState({
+    address: "",
+    Balance: null,
+  });
+
+  const btnhandler = () => {
+    if (window.ethereum) {
+      window.ethereum
+        .request({ method: "eth_requestAccounts" })
+        .then((res) => {accountChangeHandler(res[0])
+          console.log(res[0])}
+        )
+    } else {
+      alert("install metamask extension!!");
+    }
+  };
+
+  const getbalance = (address) => {
+    window.ethereum
+      .request({
+        method: "eth_getBalance",
+        params: [address, "latest"],
+      })
+      .then((balance) => {
+        setdata({
+          Balance: ethers.utils.formatEther(balance),
+        });
+      });
+  };
+
+  const accountChangeHandler = (account) => {
+    setdata({
+      address: account,
+    });
+
+    getbalance(account);
+  };
+
+  
+
   return (
     <>
       <Navbar />
@@ -18,8 +62,9 @@ export const Home = () => {
       {/* connect button */}
       <div className="main-container">
         <img className="home-image" src={Home1} alt="home image" />
-        <button className="wallet-btn">Connect Wallet</button>
-      </div>
+            <Link to="/Ether"> <button className="wallet-btn">Connect Wallet</button></Link>
+       
+          </div>
 
       <div className="middle-container">
         <div className="left-container-text">
@@ -43,7 +88,9 @@ export const Home = () => {
           <h4>JOIN THE SOCIETY</h4>
         </div>
         <div className="btn">
+        <a target="_blank" href = "https://www.premint.xyz/goldenkeysociety/">
           <button className="btn-mint">Mint</button>
+          </a>
         </div>
       </div>
 
@@ -172,7 +219,9 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-          <button className="wallet-btn join-btn">Join Here</button>
+        <a href="https://discord.gg/goldenkeysociety" target="_blank">
+          <button className="join-btn">Join Here</button>
+        </a>
         </div>
       </div>
 
