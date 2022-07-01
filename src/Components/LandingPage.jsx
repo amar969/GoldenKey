@@ -3,7 +3,6 @@ import { Footer } from "../Footer/Footer";
 import "./LandingPage.css";
 import original from "../images/original.png";
 import icon from "../images/frame.png";
-import logo from "../images/social.png";
 import { Link } from "react-router-dom";
 import insta from "../images/instagram.png";
 import twitter from "../images/twitter.png";
@@ -36,8 +35,7 @@ export const LandingPage = () => {
         </div>
         <img src={original} className="home-img" alt="Home with boat" />
         <div className="btn-text-container">
-          <Link to="/Home">
-            {" "}
+          <Link to="/Home" style={{ color: "black" }} >
             <button className="enter-btn ">ENTER </button>
           </Link>
           </div>

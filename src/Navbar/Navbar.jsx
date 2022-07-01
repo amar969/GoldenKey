@@ -4,7 +4,6 @@ import insta from "../images/instagram.png";
 import twitter from "../images/twitter.png";
 import discord2 from "../images/discord-2.png";
 import "./Navbar.css";
-import social from "../images/social.png";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {

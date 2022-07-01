@@ -8,9 +8,7 @@ import eth from "../images/ETH-GIF.gif";
 import ezgif from "../images/ezgif.com-gif-maker.gif";
 import gif1 from "../images/IMB_qMeOIN.gif";
 import Team from "../images/Team.png";
-import { Link } from "react-router-dom";
 import { ethers } from "ethers";
-import { Ehter } from "./Ether";
 
 
 export const Home = () => {
@@ -72,11 +70,10 @@ export const Home = () => {
 
       {/* connect button */}
       <div className="main-container">
-        <img className="home-image" src={Home1} alt="home image" />
+        <img className="home-image" src={Home1} alt="home" />
         <button className="wallet-btn" onClick={btnhandler}>
             {data.Balance ? "Connected" : "Connect to Wallet"}
           </button>
-       
           </div>
 
       <div className="middle-container">
@@ -92,7 +89,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-          <img src={profile} className="profile-image" alt="profile image" />
+          <img src={profile} className="profile-image" alt="profile" />
         </div>
       </div>
 
@@ -101,7 +98,7 @@ export const Home = () => {
           <h4>JOIN THE SOCIETY</h4>
         </div>
         <div className="btn">
-        <a target="_blank" href = "https://www.premint.xyz/goldenkeysociety/">
+        <a target="_blank" style={{color : "black"}} href = "https://www.premint.xyz/goldenkeysociety/">
           <button className="btn-mint">Mint</button>
           </a>
         </div>
@@ -123,7 +120,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-          <img src={eth} className="gif" alt="profile image" />
+          <img src={eth} className="gif" alt="profile" />
         </div>
       </div>
 
@@ -163,7 +160,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-          <img src={ezgif} className="gif" alt="profile image" />
+          <img src={ezgif} className="gif" alt="profile" />
         </div>
       </div>
 
@@ -213,7 +210,7 @@ export const Home = () => {
           </ul>
         </div>
         <div className="right-container-image">
-          <img src={gif1} className="gif3" alt="profile image" />
+          <img src={gif1} className="gif3" alt="profile" />
         </div>
       </div>
 
@@ -232,7 +229,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-        <a href="https://discord.gg/goldenkeysociety" target="_blank">
+        <a href="https://discord.gg/goldenkeysociety" style={{color : "black"}}  target="_blank">
           <button className="join-btn">Join Here</button>
         </a>
         </div>
@@ -254,7 +251,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-          <img src={Team} alt="team image" className="team-image" />
+          <img src={Team} alt="team" className="team-image" />
         </div>
       </div>
 

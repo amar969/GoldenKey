@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.4da5fd02.css",
-    "main.js": "./static/js/main.588ac674.js",
+    "main.css": "./static/css/main.67a22a54.css",
+    "main.js": "./static/js/main.1af39574.js",
     "static/media/ezgif.com-gif-maker.gif": "./static/media/ezgif.com-gif-maker.8993a80c62048c771c05.gif",
     "static/media/ETH-GIF.gif": "./static/media/ETH-GIF.57336b683ce670d46fc6.gif",
     "static/media/IMB_qMeOIN.gif": "./static/media/IMB_qMeOIN.36a1d58ac9db5fe97d24.gif",
@@ -12,11 +12,11 @@
     "static/media/frame-5-1@2x.png": "./static/media/frame-5-1@2x.9d0914d2ccfd59895fff.png",
     "static/media/frame.png": "./static/media/frame.7102ece752e49ee09c63.png",
     "index.html": "./index.html",
-    "main.4da5fd02.css.map": "./static/css/main.4da5fd02.css.map",
-    "main.588ac674.js.map": "./static/js/main.588ac674.js.map"
+    "main.67a22a54.css.map": "./static/css/main.67a22a54.css.map",
+    "main.1af39574.js.map": "./static/js/main.1af39574.js.map"
   },
   "entrypoints": [
-    "static/css/main.4da5fd02.css",
-    "static/js/main.588ac674.js"
+    "static/css/main.67a22a54.css",
+    "static/js/main.1af39574.js"
   ]
 }

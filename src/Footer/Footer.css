@@ -41,21 +41,34 @@ Link .brand-logo{
     
     .footer{
         display: flex;
-        justify-content: space-evenly;
         padding: 10px 40px;
         align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     
     
     .discord-watermark{
-        width: 120px;
+        width: 200px;
         height: 54px;
+        align-self: flex-start;
+        position: absolute;
+        left: 20px;
+        top: 80px;
     }
     
-    .brand-logo{
-        width: 105px;
-        height: 105px;
-        margin: auto;
+    .footer .brand-logo{
+        width: 200px;
+        height: 200px;
+        align-self: center;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: -10px;
         
     }
     
@@ -63,10 +76,11 @@ Link .brand-logo{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 290px;
+        margin-right: -590px;
+
     }
     .social a img{
-        width: 25px;
+        width: 35px;
         padding-right: 5px;
     }
 }
@@ -77,27 +91,27 @@ Link .brand-logo{
     
     .footer{
         display: flex;
-        justify-content: space-evenly;
-        padding: 10px 40px;
         align-items: center;
         position: relative;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
     }
     
     
-    .discord-watermark{
-        width: 60px;
+   .footer .discord-watermark{
+        width: 100px;
         height: 31px;
+        align-self: flex-start;
         position: absolute;
         left: 20px;
-        top: 70px;
+        top: 40px;
+
     }
     
-    .brand-logo{
+    .footer .brand-logo{
         width: 100px;
-        height: 100px;
-        margin: auto;
-        position: absolute;
-        left: 150px;
+        align-self: center;
     }
     
     .social{
@@ -119,6 +133,6 @@ Link .brand-logo{
     }
 
     .footer-container{
-        margin-bottom: 150px;
+        margin-bottom: 10px;
     }
 }

@@ -9,6 +9,10 @@ body{
   color: white;
 }
 
+button {
+  color: black;
+}
+
 
 .App-logo {
   height: 40vmin;

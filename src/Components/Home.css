@@ -224,9 +224,12 @@ hr{
         font-size: 18px;
         position: absolute;
         bottom: 0;
-        left: 150px;
+        left: 0;
+        right: 0;
         outline: none;
         border: none;
+        margin-left: 90px;
+        margin-right: 90px;
     }
 
 
@@ -405,10 +408,6 @@ hr{
         margin: 5px 20px;
     }
 
-    a {
-        color: black;
-    }
-
     .main-container{
         display: flex;
         position: relative;
@@ -428,13 +427,15 @@ hr{
         border-radius: 10px;
         padding: 15px;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 30px;
         position: absolute;
-        bottom: -47px;
-        left: 250px;
-        margin: 30px;
+        bottom: -20px;
+        left: 0;
+        right: 0;
         outline: none;
         border: none;
+        margin-right: 150px;
+        margin-left: 150px;
     }
 
 
