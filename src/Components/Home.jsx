@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar } from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
 import "./Home.css";
@@ -10,15 +10,26 @@ import gif1 from "../images/IMB_qMeOIN.gif";
 import Team from "../images/Team.png";
 import { ethers } from "ethers";
 
-
 export const Home = () => {
-
-
-
+  // LITTLE BUG FIX FOR USING keccak256 LIBRARY window.Buffer = window.Buffer || Buffer;
+  // VARIABLE THAT CONTAINS THE CONTRACT const [contract, setContract] = useState(null)
+  // AMOUNT FOR TXN
+ 
   const [data, setdata] = React.useState({
     address: "",
     Balance: null,
   });
+
+  // true IF USER IS CONNECTED || false IF USER IS NOT CONNECTED
+  const [connected, updateConnection] = useState(false);
+  // FUNCTION TO INCREMENT MINT AMOUNT ON DAPP
+  // const increment = () => {
+  //   if (amount < maxAmount) setAmount(amount + 1);
+  // };
+  // FUNCTION TO DECREMENT MINT AMOUNT ON DAPP
+  // const decrement = () => {
+  //   if (amount > 1) setAmount(amount - 1);
+  // };
 
   const btnhandler = () => {
     // Asking if metamask is already present or not
@@ -42,12 +53,12 @@ export const Home = () => {
         params: [address, "latest"],
       })
       .then((balance) => {
-          console.log(balance)
-          console.log(address)
+        console.log(balance);
+        console.log(address);
         // Setting balance
         setdata({
           Balance: ethers.utils.formatEther(balance),
-          address: ethers.utils.formatEther(address)
+          address: ethers.utils.formatEther(address),
         });
       });
   };
@@ -62,8 +73,6 @@ export const Home = () => {
     // Setting a balance
     getbalance(account);
   };
-  
-
   return (
     <>
       <Navbar />
@@ -71,10 +80,16 @@ export const Home = () => {
       {/* connect button */}
       <div className="main-container">
         <img className="home-image" src={Home1} alt="home" />
+        <a
+            style={{ color: "black" }}
+            target="_blank" 
+            href = "https://goldenkey-society.netlify.app/"
+          >
         <button className="wallet-btn" onClick={btnhandler}>
-            {data.Balance ? "Connected" : "Connect to Wallet"}
-          </button>
-          </div>
+          Purchase
+        </button>
+        </a>
+      </div>
 
       <div className="middle-container">
         <div className="left-container-text">
@@ -97,9 +112,15 @@ export const Home = () => {
         <div className="txt1">
           <h4>JOIN THE SOCIETY</h4>
         </div>
+
+        
         <div className="btn">
-        <a target="_blank" style={{color : "black"}} href = "https://www.premint.xyz/goldenkeysociety/">
-          <button className="btn-mint">Mint</button>
+          <a
+            style={{ color: "black" }}
+            target="_blank" 
+            href = "https://goldenkey-society.netlify.app/"
+          >
+            <button className="btn-mint">Mint</button>
           </a>
         </div>
       </div>
@@ -229,12 +250,15 @@ export const Home = () => {
           </p>
         </div>
         <div className="right-container-image">
-        <a href="https://discord.gg/goldenkeysociety" style={{color : "black"}}  target="_blank">
-          <button className="join-btn">Join Here</button>
-        </a>
+          <a
+            href="https://discord.gg/goldenkeysociety"
+            style={{ color: "black" }}
+            target="_blank"
+          >
+            <button className="join-btn">Join Here</button>
+          </a>
         </div>
       </div>
-
 
       {/* Team page */}
 
