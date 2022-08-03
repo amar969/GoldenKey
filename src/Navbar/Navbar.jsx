@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <>
       <div className="navbar-conatiner">
-        <Link to="/Home">
+        <Link to="/">
           <img src={icon} className="icon" alt="icon" />
         </Link>
 
@@ -18,10 +18,10 @@ export const Navbar = () => {
           <Link to="/Whitepaper">
             <h3>White Paper</h3>
           </Link>
-          <a href="/Home#the-roadmap">
+          <a href="/#the-roadmap">
             <h3>Gallery</h3>
           </a>
-          <a href="/Home#the-team">
+          <a href="/#the-team">
             {" "}
             <h3>Team</h3>{" "}
           </a>

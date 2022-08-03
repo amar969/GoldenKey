@@ -80,7 +80,7 @@ export const Home = () => {
       {/* connect button */}
       <div className="main-container">
         <img className="home-image" src={Home1} alt="home" />
-        <a
+        {/* <a
             style={{ color: "black" }}
             target="_blank" 
             href = "https://goldenkey-society.netlify.app/"
@@ -88,7 +88,7 @@ export const Home = () => {
         <button className="wallet-btn" onClick={btnhandler}>
           Purchase
         </button>
-        </a>
+        </a> */}
       </div>
 
       <div className="middle-container">
@@ -115,13 +115,24 @@ export const Home = () => {
 
         
         <div className="btn">
-          <a
+         
+            <div style={{ display: "flex", flexDirection: "column", gap: "20px" }} >
+            <a
             style={{ color: "black" }}
             target="_blank" 
             href = "https://goldenkey-society.netlify.app/"
-          >
-            <button className="btn-mint">Mint</button>
-          </a>
+            >
+              <button className="btn-mint1">Crypto</button>
+              </a>
+              <a
+            style={{ color: "black" }}
+            target="_blank" 
+            href = "https://goldenkeysocietyaccesspass.com/"
+            >
+              <button className="btn-mint"> Debit / Credit </button>
+            </a>
+            </div>
+          
         </div>
       </div>
 
@@ -137,7 +148,7 @@ export const Home = () => {
             over 200 possible traits, including gender, headwear, style, and
             more. All tokens are lit, but some are rarer than others. The Golden
             Key Society NFTs are stored as ERC-721 tokens on the Ethereum
-            blockchain and hosted on IPFS. Purchasing a key costs 0.2 ETH.
+            blockchain and hosted on IPFS. Purchasing a key costs 0.21 ETH.
           </p>
         </div>
         <div className="right-container-image">
@@ -280,7 +291,7 @@ export const Home = () => {
       </div>
 
       <div className="coming-soon-container">
-        VERIFIED SMART CONTRACT ADDRESS: <span>COMING SOON!</span>{" "}
+        VERIFIED SMART CONTRACT ADDRESS: <span>0x78E266707bD245D4bC414B9633341fdd72780251</span>{" "}
       </div>
 
       <Footer />

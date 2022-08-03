@@ -105,6 +105,14 @@ hr{
     font-weight: bold;
 }
 
+.btn-mint1{
+    padding: 20px 165px;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .text-container{
     margin: 60px 20px;
 }
@@ -303,6 +311,15 @@ hr{
 
 .btn-mint{
     padding: 15px 60px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 5px 5px;
+}
+
+.btn-mint1{
+    padding: 15px 90px;
     border-radius: 10px;
     border: none;
     font-size: 20px;
@@ -514,6 +531,15 @@ hr{
     border-radius: 10px;
     border: none;
     font-size: 25px;
+    font-weight: bold;
+    box-shadow: 5px 5px;
+}
+
+.btn-mint1{
+    padding: 15px 125px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
     font-weight: bold;
     box-shadow: 5px 5px;
 }
